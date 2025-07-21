@@ -1,4 +1,4 @@
-package todo;
+package todo.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

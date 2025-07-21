@@ -1,4 +1,4 @@
-package todo;
+package todo.domain;
 
 /**
  * Starting point of the application contaning the
@@ -6,7 +6,7 @@ package todo;
  */
 public class Greeter {
 
-    String message() {
+    public String message() {
         return "hey you!";
     }
 }

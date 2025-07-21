@@ -31,7 +31,11 @@
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
     <maven-surefire-plugin.version>3.2.2</maven-surefire-plugin.version>
     <assertj-bom.version>3.24.2</assertj-bom.version>
+    <rest-assured.version>5.5.5</rest-assured.version>
+    <spark.version>2.9.4</spark.version>
 
+    <javalin.version>6.7.0</javalin.version>
+    <slf4j-simple.version>2.0.16</slf4j-simple.version>
   </properties>
 
   <dependencyManagement>
@@ -59,6 +63,20 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
+      <dependency>
+        <groupId>io.javalin</groupId>
+        <artifactId>javalin</artifactId>
+        <version>${javalin.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>${rest-assured.version}</version>
+        <scope>test</scope>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -78,6 +96,25 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${rest-assured.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.javalin</groupId>
+      <artifactId>javalin</artifactId>
+      <version>${javalin.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j-simple.version}</version>
     </dependency>
 
   </dependencies>
