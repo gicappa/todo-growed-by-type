@@ -1,4 +1,4 @@
-package gk.todo;
+package todo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -7,7 +7,6 @@ import static org.mockito.Mockito.verify;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.internal.framework.DefaultMockitoFramework;
 
 /**
  * Unit test for simple App.

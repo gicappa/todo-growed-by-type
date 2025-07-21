@@ -1,4 +1,4 @@
-package gk.todo;
+package todo;
 
 /**
  * Starting point of the application contaning the
