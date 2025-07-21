@@ -6,19 +6,19 @@ package gk.todo;
  */
 public class App implements Runnable {
 
-    private final Domain domain;
+    private final Greeter domain;
 
-    public App(Domain domain) {
+    public App(Greeter domain) {
         this.domain = domain;
     }
 
     @Override
     public void run() {
-        domain.greetMessage();
+        System.out.println(domain.message());
     }
 
     public static void main(String[] args) {
-        var app = new App(new Domain());
+        var app = new App(new Greeter());
 
         app.run();
     }

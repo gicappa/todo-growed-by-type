@@ -4,9 +4,9 @@ package gk.todo;
  * Starting point of the application contaning the
  * main function.
  */
-public class Domain {
+public class Greeter {
 
-    String greetMessage() {
+    String message() {
         return "hey you!";
     }
 }
